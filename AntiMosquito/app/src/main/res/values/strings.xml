@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Anti-Mosquito</string>
+
+    <string name="share_empty"></string>
+
+    <string name="app_title">Electronic Mosquito Repellent Device</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_review">Write a review</string>
+
+    <string name="voice_description_mix">Mixing Mode(Mixing)</string>
+    <string name="voice_description_adult">Adults Mode(15Hz)</string>
+    <string name="voice_description_kids">Kids-Safe Mode(20Hz)</string>
+    <string name="voice_description_pets">Pets Mode(25Hz)</string>
+
+    <string name="notify_content">Anti-Mosquito mode has been started up</string>
+    <string name="message_no_store">No app store is found in your device, please install one and try again.</string>
+    <string name="message_attention">Attention: The voice is some shrill, please adjust your voice to suitable volume.</string>
+</resources>
