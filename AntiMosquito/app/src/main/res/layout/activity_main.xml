@@ -41,10 +41,11 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="@null"
         android:background="@drawable/switch_off" />
-    <RelativeLayout
-        android:id="@+id/id_flurry_ad_banner"
+    <LinearLayout
+        android:id="@+id/id_ad_banner"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:orientation="vertical"
         android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
