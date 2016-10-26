@@ -7,6 +7,7 @@
     <string name="app_title">电子驱蚊器</string>
     <string name="action_settings">设置</string>
     <string name="action_review">给个好评</string>
+    <string name="action_ads">关闭广告</string>
 
     <string name="voice_description_mix">混合模式(混合)</string>
     <string name="voice_description_adult">成人模式(15Hz)</string>
@@ -14,6 +15,6 @@
     <string name="voice_description_pets">宠物模式(25Hz)</string>
 
     <string name="notify_content">电子驱蚊模式已经启动</string>
-    <string name="message_no_store">没有找到应用市场，请安装任意应用市场后重试</string>
+    <string name="message_no_store">没有找到应用市场，请安装任意应用市场后重试！</string>
     <string name="message_attention">注意：本应用采用仿生学的原理，发出的声音会有些刺耳，请不要在高音下靠近耳朵，以免对耳朵造成损伤！</string>
 </resources>

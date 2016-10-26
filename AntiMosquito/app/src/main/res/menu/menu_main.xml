@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item android:id="@+id/action_review" android:title="@string/action_review"
         android:orderInCategory="1" app:showAsAction="never" />
+    <item android:id="@+id/action_ads" android:title="@string/action_ads"
+        android:orderInCategory="1" app:showAsAction="never" />
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" android:visible="false" />
 </menu>

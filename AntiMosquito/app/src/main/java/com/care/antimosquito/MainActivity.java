@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -101,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
                             ViewGroup.LayoutParams.MATCH_PARENT,
                             ViewGroup.LayoutParams.WRAP_CONTENT
                     ));
-
                 }
             }
         }.execute();
@@ -127,6 +127,9 @@ public class MainActivity extends AppCompatActivity {
         } else if(id == R.id.action_review) {
             Utilities.launchAppStoreDetail(this);
             return true;
+        } else if(id == R.id.action_ads) {
+            mAdBannerLayout.setVisibility(View.INVISIBLE);
+            mAdBannerLayout.setLayoutParams(new RelativeLayout.LayoutParams(0, 0));
         }
 
         return super.onOptionsItemSelected(item);

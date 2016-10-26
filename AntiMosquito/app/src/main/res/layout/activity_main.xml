@@ -5,47 +5,60 @@
     android:background="@color/color_bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/id_voice_attention"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/message_attention"
-        android:textColor="@color/color_attention_text"
-        android:textSize="15sp" />
-
-    <TextView
-        android:id="@+id/id_mode_description"
-        android:layout_below="@+id/id_voice_attention"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@null"
-        android:textColor="@color/color_description_text"
-        android:textSize="20sp" />
-    <ImageView
-        android:id="@+id/id_anti_mosquito_image"
-        android:layout_below="@+id/id_mode_description"
+    <ScrollView
+        android:id="@+id/id_scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:contentDescription="@null"
-        android:src="@drawable/mosquito"/>
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/id_voice_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/message_attention"
+                android:textColor="@color/color_attention_text"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/id_mode_description"
+                android:layout_below="@id/id_voice_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@null"
+                android:textColor="@color/color_description_text"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/id_anti_mosquito_image"
+                android:layout_below="@id/id_mode_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal"
+                android:clickable="true"
+                android:src="@drawable/mosquito"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageButton
+                android:id="@+id/id_anti_mosquito_switch"
+                android:layout_below="@id/id_anti_mosquito_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:background="@drawable/switch_off" />
+        </RelativeLayout>
+    </ScrollView>
 
-    <ImageButton
-        android:id="@+id/id_anti_mosquito_switch"
-        android:layout_below="@+id/id_anti_mosquito_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@null"
-        android:background="@drawable/switch_off" />
+
     <LinearLayout
         android:id="@+id/id_ad_banner"
+        android:layout_below="@id/id_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="vertical"
         android:layout_alignParentBottom="true" />
-
 </RelativeLayout>
